@@ -36,7 +36,7 @@ spec:
         k8s-app: kube-proxy-windows
     spec:
       serviceAccountName: kube-proxy
-      #hostNetwork: true
+      hostNetwork: true
       containers:
       - command:
         - pwsh
@@ -76,8 +76,8 @@ spec:
           name: kube-proxy-windows
         name: kube-proxy-windows
       - configMap:
-          name: kube-proxy-windows
-        name: kube-proxy-windows
+          name: kube-proxy
+        name: kube-proxy
       - hostPath:
           path: /
         name: host
