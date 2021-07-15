@@ -77,7 +77,7 @@ spec:
         name: kube-proxy-windows
       - configMap:
           name: kube-proxy-windows
-        name: kube-proxy
+        name: kube-proxy-windows
       - hostPath:
           path: /
         name: host
